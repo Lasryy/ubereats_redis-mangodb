@@ -33,7 +33,7 @@ try:
             print(f"    ID: {data.get('id_course')}")
             print(f"    Restaurant: {data.get('restaurant')}")
             print(f"    Adresse: {data.get('adresse_livraison')}")
-            print(f"    Rétribution: {data.get('retribution')} €")
+            print(f"    Rétribution: {data.get('retribution')} $")
 
 except KeyboardInterrupt:
     print("\nArrêt du programme livreur.")
