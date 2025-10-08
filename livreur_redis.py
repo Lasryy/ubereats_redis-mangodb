@@ -1,4 +1,4 @@
-# livreur_redis.py (Version Améliorée)
+# livreur_redis.py
 import redis
 import json
 
@@ -30,8 +30,6 @@ try:
             print("\n[!] Nouvelle course disponible !")
             print(f"    ID: {data.get('id_course')}")
             print(f"    Point de retrait: {data.get('restaurant')} - {data.get('adresse_retrait')}")
-            # On ajoute la description de la commande ici
-            print(f"    Commande: {data.get('description_commande')}")
             print(f"    Destination: {data.get('adresse_livraison')}")
             print(f"    Rétribution: {data.get('retribution')} €")
             print(f"    Statut: {data.get('statut')}")
