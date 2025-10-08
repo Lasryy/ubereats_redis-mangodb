@@ -38,7 +38,7 @@ if df_restaurants is not None and not df_restaurants.empty:
         "id_course": f"course_{int(time.time())}",
         "restaurant": restaurant_aleatoire['name'],
         "adresse_retrait": restaurant_aleatoire['full_address'],
-        "adresse_livraison": f"Livraison pour : {menu_item_aleatoire['name']}",
+        "adresse_livraison": f"Livraison pour : 34 BIS Rue Pierre Quemener, 93150 Le Blanc Mesnil",
         "retribution": round(random.uniform(4.5, 12.0), 2),
         "statut": "en_attente_de_livreur",
         "livreurs_interesses": [],
