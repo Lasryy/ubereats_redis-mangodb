@@ -1,4 +1,4 @@
-# corrected_manager_redis.py
+# manager_redis.py
 import redis
 import json
 import time
@@ -14,7 +14,6 @@ try:
     
     # On supprime les lignes avec des valeurs manquantes pour les colonnes qu'on va utiliser
     df_restaurants.dropna(subset=['full_address', 'name'], inplace=True)
-    # Ligne corrigée : on utilise 'name' qui est le nom correct de la colonne
     df_menus.dropna(subset=['name'], inplace=True)
 
     print("Fichiers CSV chargés avec succès !")
@@ -64,9 +63,9 @@ else:
     # Données de secours si les fichiers ne sont pas chargés
     offre = {
         "id_course": f"course_{int(time.time())}",
-        "restaurant": "Restaurant par Défaut",
+        "restaurant": "Le Pacha",
         "adresse_livraison": "Adresse par Défaut",
-        "retribution": 5.0
+        "retribution": 13.0
     }
 
 # 4. Convertir et publier le message
